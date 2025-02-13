@@ -269,6 +269,38 @@ a:hover{
     justify-content: center; /* Optional, to center them */
     align-items: center; /* Optional, for vertical centering */
   }
+  
+/* ABOUT SECTION */
+  
+#about{
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-containers{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers,
+.about-details-containers{
+    display: flex;
+}
+.about-pic{
+    border-radius: 2rem;
+}
+.arrow {
+    position: fixed; /* Ensures it stays in the bottom right regardless of scrolling */
+    right: 2rem; /* Adjust for desired spacing */
+    bottom: 2rem;
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
