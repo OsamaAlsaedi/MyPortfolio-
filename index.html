@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav"> 
+    <div class="logo"> Osama Alsaedi</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Projects">My Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="dropdown-nav">
+        <div class="logo"> Osama Alsaedi</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about"onclick="toggleMenu()">About</a></li>
+            <li><a href="#Projects"onclick="toggleMenu()">My Projects</a></li>
+            <li><a href="#Contact"onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/ProfilePic.png" alt="Osama Alsaedi ProfilePic">
+        </div>
+        <div class="section_text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title"> Osama Alsaedi</h1>
+            <p1 class="section__text__p2"> Cyber Operations: Defense and Forensics</p1>
+            <div class= "btn-container">
+                <div id="contact-cv-container">
+    <div id="contact-info">
+        <button class="btn btn-color-1">Contact Info</button>
+    </div>
+    <div id="download-cv">
+        <button class="btn btn-color-2">Download CV</button>
+    </div>
+</div>
+
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="linkedin"
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/osama-alsaedi-2611552b6/'">
+            <img src="./assets/github.png" alt="github"
+            class="icon" 
+            onclick="location.href='https://github.com/OsamaAlsaedi'">
+        </div>
+    </div>
+    </section>
+    <<link rel="stylesheet" href="style.css"> <!-- Fixed typo -->
+
+    <section id="about">
+        <p class="section__text__p1"> Get To Know More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/sideProfile.png" alt="aboutProfile"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <!-- Experience Section -->
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p> Software Engineer at Cirris - Internship</p>
+                    </div>
+                    <!-- Education Section -->
+                    <div class="details-container">
+                        <img src="assets/education.png" alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p> UofA Cyber Operations: Defense and Forensics </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
