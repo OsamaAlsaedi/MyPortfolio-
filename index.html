@@ -9,31 +9,32 @@
 </head>
 <body>
     <nav id="desktop-nav"> 
-    <div class="logo"> Osama Alsaedi</div>
-    <div>
-        <ul class="nav-links">
+        <div class="logo"> Osama Alsaedi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    <nav id="dropdown-nav">
+        <div class="logo">Osama Alsaedi</div>
+        <div class="dropdown-menu">
+          <div class="dropdown-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">My Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    </nav>
-    <nav id="dropdown-nav">
-        <div class="logo"> Osama Alsaedi</div>
-        <div class="dropdown-menu">
-            <div class="dropdown-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+          </div>
         </div>
-        <div class="menu-links">
-            <li><a href="#about"onclick="toggleMenu()">About</a></li>
-            <li><a href="#Projects"onclick="toggleMenu()">My Projects</a></li>
-            <li><a href="#Contact"onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
-    </nav>
+      </nav>
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/ProfilePic.png" alt="profile picture" />
